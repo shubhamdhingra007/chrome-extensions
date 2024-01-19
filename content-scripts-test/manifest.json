@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Content scripts test extension",
+    "description": "Runs script on every page",
+    "icons": {
+        "32": "icons/icon32.png"
+    },
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": ["*://*/*"]
+        }
+    ]
+}
